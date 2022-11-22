@@ -1,0 +1,83 @@
+/* ----------------------------------------------------------------- */
+/* Global */
+/* ----------------------------------------------------------------- */
+
+body {
+    background-color: rgb(193, 192, 180);
+    color: rgb(113, 138, 196);
+    font-size: 2em;
+    margin: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* ----------------------------------------------------------------- */
+/*  */
+/* ----------------------------------------------------------------- */
+.title{
+    text-align: center;
+    margin-top: 32px;
+}
+.calculator {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(50, 50, 50);
+    border-radius: 40px;
+    border: 2px solid #161616;
+    outline: 3px solid rgb(50 50 50);
+    padding: 4px;
+    margin: 20px auto;
+}
+.screen {
+    width: 100%;
+    height: 160px;
+    box-sizing: border-box;
+    padding: 16px;
+    font-size: 24px;
+    background-color: #161616;
+    border: 1px solid #000 !important;
+    outline: 2px solid #3c3c3c;
+    color:#fff;
+    grid-column: 1/5;
+    border-radius: 40px 40px 12px 12px;
+    text-align: end;
+}
+.buttonsContainer {
+    padding: 15px;
+    display: grid;
+    width: fit-content;
+    grid-template-columns: 75px 75px 75px 75px ;
+    grid-template-rows: 75px 75px 75px 75px 75px;
+    justify-content: center;
+}
+
+.button {
+    border-radius: 50%;
+    outline: 2px solid #000;
+    border: 2px solid rgb(50 50 50);
+    margin: 8px;
+    background: rgb(79,79,79);
+    background: linear-gradient(0deg, rgba(79,79,79,1) 0%, rgba(0,0,0,1) 100%);
+    box-shadow: 0px 9px 7px -7px rgba(79,79,79,0.74);
+    -webkit-box-shadow: 0px 9px 7px -7px rgba(79,79,79,0.74);
+    -moz-box-shadow: 0px 9px 7px -7px rgba(79,79,79,0.74);
+    color: #fff;
+    font-size: 22px;
+}
+.button:hover {
+    -webkit-box-shadow: 10px 10px 12px 0px rgba(64,64,64,0.69);
+    -moz-box-shadow: 10px 10px 12px 0px rgba(64,64,64,0.69);
+    box-shadow: 10px 10px 12px 0px rgba(64,64,64,0.69);
+    cursor: pointer;
+}
+.operator {
+    color: rgb(252, 167, 167);
+}
+#equalBtn {
+    background: rgb(252, 167, 167);
+    border: 2px solid rgb(252, 167, 167);
+    background: linear-gradient(0deg, rgba(252,167,167,1) 0%, rgba(214,88,88,1) 100%);
+    color: #000;
+}
+#backBtn, #comaBtn, #plusBtn, #menosBtn, #porBtn{
+    font-size: 28px;
+}
